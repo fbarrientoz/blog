@@ -36,9 +36,9 @@
                 
                 {% if user.is_authenticated %}
                     {{ user.username }}
-                    <a class="btn btn-sm btn-outline-info mx-1" href="{% url 'logout' %}">Log out</a>
+                    <a class="btn btn-sm btn-dark mx-1" href="{% url 'logout' %}">Log out</a>
                 {% else %}
-                    <a href="{% url 'login' %}" class="btn btn-sm btn-outline-info mx-1">Login</a>
+                    <a href="{% url 'login' %}" class="btn btn-sm btn-dark mx-1">Login</a>
                     <!-- <button class="btn btn-sm btn-outline-success mx-1">SignUp</button> -->
                 {% endif %}
             </div>
