@@ -16,8 +16,8 @@ form.custom p label {
 
 form.custom p input, textarea, select {
     flex: 4;
-    border: 1px solid #e4dcc2;
+    border: 1px solid #d3d1d1;
     border-radius: 3px;
-    background-color: #ffeabc;
+    background-color: #f6f6f6;
     padding: 0.2rem;
 }
