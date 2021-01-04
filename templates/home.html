@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for post in object_list %}
+        <div class="card w-75 mx-auto mb-3">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <a class="text-decoration-none" href="{% url 'post_detail' post.pk %}">{{post.title}}</a>
+                </h5>
+
+                <figure class="text-start">
+                    <blockquote class="blockquote">
+                    <p>{{post.body}}</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        {{post.author}}
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+    {% endfor %}
+{% endblock content %}

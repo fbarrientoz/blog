@@ -1,0 +1,23 @@
+header {
+    margin-bottom: 2rem;
+}
+form.custom {
+    margin-top: 2rem;
+}
+
+form.custom p {
+    display: flex;
+    flex-direction: row;
+}
+
+form.custom p label {
+    flex: 1;
+}
+
+form.custom p input, textarea, select {
+    flex: 4;
+    border: 1px solid #e4dcc2;
+    border-radius: 3px;
+    background-color: #ffeabc;
+    padding: 0.2rem;
+}
